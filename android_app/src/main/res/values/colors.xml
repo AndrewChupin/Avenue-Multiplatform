@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#4A90E2</color>
+    <color name="colorAccentDark">#375F82</color>
+    <color name="colorScreen">#ECF0F5</color>
+    <color name="colorDangerous">#FB4941</color>
+    <color name="colorSuccess">#7ED321</color>
+
+    <!-- Common Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Text Colors -->
+    <color name="text_dark_main">#000000</color>
+    <color name="text_dark_main_alpha">#B7000000</color>
+    <color name="text_dark_secondary">#4E4E4E</color>
+    <color name="text_dark_description">#A5A7A7</color>
+
+    <color name="text_light_main">#FFFEFE</color>
+    <color name="text_light_secondary">#ECF0F5</color>
+    <color name="text_light_description">#E1E3E3</color>
+
+    <!-- Background colors -->
+    <color name="main_light_bg">#FFFFFF</color>
+    <color name="main_light_description_bg">#EFEFEF</color>
+    <color name="main_dark_bg">#000000</color>
+    <color name="main_dark_description_bg">#8D8D8D</color>
+</resources>
