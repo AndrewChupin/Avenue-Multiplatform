@@ -7,7 +7,9 @@ import android.os.Parcelable
 import android.support.annotation.CallSuper
 import android.support.design.widget.Snackbar
 import android.support.v4.app.Fragment
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import com.avenue.core.presentation.reducer.Action
 import com.avenue.core.presentation.reducer.Reducer
 import com.avenue.core.presentation.reducer.ReducerBuilder
@@ -20,6 +22,11 @@ import kotlinx.android.synthetic.*
 abstract class BaseFragment: Fragment(), ActivityActionDelegate {
 
     abstract val layoutId: Int
+
+    @CallSuper
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        return inflater.inflate(layoutId, container, false)
+    }
 
     @CallSuper
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -62,10 +69,10 @@ abstract class BaseFragment: Fragment(), ActivityActionDelegate {
 }
 
 
-abstract class RenderableBaseFragment<R: Reducer<A, VS>, A: Action, VS: ViewState>: BaseFragment(), RenderableView<R, A, VS> {
+abstract class RenderableBaseFragment<A: Action, VS: ViewState>: BaseFragment(), RenderableView<A, VS> {
 
     abstract val reducerBuilder: ReducerBuilder<A, VS>
-    override lateinit var reducer: R
+    override lateinit var reducer: Reducer<A, VS>
     private lateinit var cancellable: Cancellable
 
     abstract fun onViewCreatedBeforeRender(savedInstanceState: Bundle?)

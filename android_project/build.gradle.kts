@@ -38,4 +38,5 @@ dependencies {
     expectedBy(project(":project_common"))
     compile(project(AvenueConfig.Modules.AndroidCore))
     api(AvenueConfig.Android.Libs.Ktor)
+    api(AvenueConfig.Android.Libs.KtorAndroid)
 }

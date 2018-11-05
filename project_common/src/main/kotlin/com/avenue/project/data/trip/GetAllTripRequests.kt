@@ -1,7 +1,7 @@
 package com.avenue.project.data.trip
 
 
-data class TripRequests(
+data class GetAllTripRequests(
     val latitude: Double,
     val longitude: Double
 )

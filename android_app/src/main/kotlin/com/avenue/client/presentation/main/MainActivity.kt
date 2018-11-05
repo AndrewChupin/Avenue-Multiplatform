@@ -2,12 +2,18 @@ package com.avenue.client.presentation.main
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import com.example.android_app.R
+import com.avenue.client.presentation.trips.TripsFragment
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .add(android.R.id.content, TripsFragment.newInstance(), TripsFragment::class.simpleName)
+                .addToBackStack(null)
+                .commit()
+        }
     }
 }

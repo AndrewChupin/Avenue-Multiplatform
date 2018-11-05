@@ -4,5 +4,5 @@ import com.avenue.core.presentation.state.ViewState
 
 
 interface ReducerBuilder<A: Action, VS: ViewState> {
-    fun <R> build(): R where R: Reducer<A, VS>
+    fun build(): Reducer<A, VS>
 }

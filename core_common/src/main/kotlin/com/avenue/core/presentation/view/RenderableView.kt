@@ -10,9 +10,9 @@ import com.avenue.core.presentation.state.ViewState
 * </br>
 * @author Andrew Chupin
 */
-interface RenderableView<R: Reducer<A, VS>, A: Action, VS: ViewState>: Renderable<VS> {
+interface RenderableView<A: Action, VS: ViewState>: Renderable<VS> {
     /**
      * [BaseViewModel] which you can provide with [javax.inject.Inject] annotation
      */
-    var reducer: R
+    var reducer: Reducer<A, VS>
 }
