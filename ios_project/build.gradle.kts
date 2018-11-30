@@ -11,6 +11,7 @@ buildscript {
     }
 }
 
+
 plugins {
     id("konan")
 }
@@ -20,7 +21,7 @@ konan {
 }
 
 konanArtifacts {
-    framework(name = "AC", configureAction = Action {
+    framework(name = "AP", configureAction = Action {
         enableMultiplatform(true)
         enableOptimizations(true)
         enableDebug(true)

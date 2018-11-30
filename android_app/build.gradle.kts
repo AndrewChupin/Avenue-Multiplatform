@@ -23,6 +23,7 @@ android {
     buildTypes {
         getByName("release") {
             isMinifyEnabled = false
+            isShrinkResources = false
             proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
         }
     }
@@ -35,6 +36,8 @@ android {
         setTargetCompatibility(JavaVersion.VERSION_1_8)
         setSourceCompatibility(JavaVersion.VERSION_1_8)
     }
+
+    lintOptions.isAbortOnError = false
 }
 
 dependencies {
