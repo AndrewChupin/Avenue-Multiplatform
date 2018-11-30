@@ -6,6 +6,10 @@ plugins {
     kotlin("platform.common")
 }
 
+sourceSets {
+    getByName("main").getJava().srcDir("src/main/kotlin")
+}
+
 
 dependencies {
     compile(project(":core_common"))

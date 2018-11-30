@@ -6,6 +6,15 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="colorControlNormal">@color/text_dark_main</item>
     </style>
 
+    <style name="CollapsingToolbarExpandedTextStyleCommon" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/text_dark_main</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:lines">25</item>
+    </style>
 </resources>

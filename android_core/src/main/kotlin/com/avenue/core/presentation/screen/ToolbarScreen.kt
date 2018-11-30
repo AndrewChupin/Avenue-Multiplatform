@@ -28,11 +28,10 @@ interface ToolbarScreen {
 
 				setDisplayHomeAsUpEnabled(toolbarConfig.isDisplayHomeButton)
 				setHomeButtonEnabled(toolbarConfig.isEnableHomeButton)
+				toolbarConfig.title?.let {
+					title = it
+				}
 			}
-		}
-
-		toolbarConfig.title?.let {
-			getToolbar().title = it
 		}
 	}
 
