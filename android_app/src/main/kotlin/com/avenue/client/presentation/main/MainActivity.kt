@@ -3,7 +3,6 @@ package com.avenue.client.presentation.main
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.avenue.client.R
-import com.avenue.client.presentation.trips.TripsFragment
 
 class MainActivity : AppCompatActivity() {
 
